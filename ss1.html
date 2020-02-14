@@ -1,0 +1,25 @@
+|<html>
+   <head>
+    <title>Form Validation</title>
+<script>
+function validationform(){
+varfirstname=document myform fname value;
+varlastname=document myform iname value;
+varemail=document myform email value;
+ 
+if(firstname==null)
+{
+alert("Name can't be blank");
+return false;
+}
+}
+</script>
+</body>
+<form name="myform"method="post"action="abc.jsp"onsubmit="return validationform()">
+Firstname<input type="text name="fname">
+
+branch<select name="branch">
+<option>computer science
+<option>IT
+</select>
+<input type="submit" value="register">
